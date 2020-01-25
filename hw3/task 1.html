@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>домашка 3</title>
+    <script src="task 1.js"></script>
+</head>
+<body>
+    <p><pre>
+1. С помощью цикла while вывести все простые числа в промежутке от 0 до 100.
+Простое число — натуральное (целое положительное) число, имеющее ровно два различных натуральных делителя — единицу и самого себя. Другими словами, число x является простым, если оно больше 1 и при этом делится без остатка только на 1 и на само себя.
+Ряд простых чисел до 100:
+2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+
+
+ОТВЕТ:
+let num = 2;
+let numArr = [];
+
+while (num <= 100) {
+	if (num == 2) {
+		numArr.push(2)
+	} else {
+		let result = 2;
+		let i = 2;
+		while (num % i !== 0 ){
+			i += 1;
+			result += 1;
+			} 
+		if (result == num) {
+			numArr.push(result);
+		}
+	}
+	num += 1;
+}
+
+console.log(numArr);
+	</pre></p>
+</body>
+</html>

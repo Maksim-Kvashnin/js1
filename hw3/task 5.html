@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>домашка 3</title>
+    <script src="task 5.js"></script>
+</head>
+<body>
+    <p><pre>
+5. *Нарисовать пирамиду с помощью console.log,
+как показано на рисунке, только у вашей
+пирамиды должно быть 20 рядов, а не 5:
+x
+xx
+xxx
+xxxx
+xxxxx
+
+ОТВЕТ:
+for (let i = 1, res = ''; i <= 20; console.log(res += 'x'), i++) {}
+
+
+вариант 2:
+let res = '';
+for (let i = 1; i <= 20; i++) {
+	console.log(res += 'x');
+}
+
+
+вариант 3:
+let res = '';
+let i = 1;
+
+while(i <= 20) {
+	console.log(res += 'x');
+	i++;
+}
+	</pre></p>
+</body>
+</html>
